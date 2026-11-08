@@ -1,0 +1,35 @@
+# Herdr setup: track only what's ours. Everything else in this folder is
+# written by Herdr (rewritten on start, or per-machine state).
+/*
+!/.gitignore
+!/README.md
+!/keys.json
+!/settings.json
+
+!/layouts/
+/layouts/*
+!/layouts/herdr-sim.json
+!/layouts/main-folders.json
+
+!/mods/
+/mods/*
+!/mods/herdr-sim/
+!/mods/herdr-sim-screen/
+!/mods/tabs-herdr-sim/
+!/mods/agents-herdr-sim/
+!/mods/space-folders/
+!/mods/git-graph/
+!/mods/over9k-switcher/
+!/mods/filetree/
+!/mods/file-icons/
+!/mods/forge-*/
+
+# Herdr rewrites these type files in every mod on start.
+**/gpui-kit.d.ts
+**/herdr.d.ts
+**/jsconfig.json
+# Herdr Sim's live screen frames.
+/mods/herdr-sim-screen/*.jpg
+
+# Folders for space-folders live outside this folder; a copy is kept here.
+!/extras/
